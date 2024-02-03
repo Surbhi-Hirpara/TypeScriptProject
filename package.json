@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.ts",
+    "build": "tsc",
+    "test": "jest",
+    "unit-test": "jest tests/db-units/ --runInBand",
+    "integration-test": "jest tests/integrations/ --runInBand"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.14",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^28.1.8",
+    "@types/node": "^20.4.1",
+    "@types/supertest": "^2.0.16",
+    "jest": "^28.1.1",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3",
+    "ts-jest": "^28.0.5",
+    "tsx": "^3.12.7"
+  }
+}
